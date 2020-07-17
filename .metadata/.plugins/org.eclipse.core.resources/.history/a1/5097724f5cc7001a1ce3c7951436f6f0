@@ -1,0 +1,15 @@
+import java.util.HashSet;
+
+public class Sets {
+
+	public static void main(String[] args) {
+		HashSet<String> students = new HashSet<>();
+		students.add("Monika");
+		students.add("Richard");
+		students.add("Simone");
+		for(String student:students) {
+			System.out.println(student);
+		}
+	}
+
+}

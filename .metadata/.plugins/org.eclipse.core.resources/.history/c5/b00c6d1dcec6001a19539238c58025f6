@@ -1,0 +1,10 @@
+package collections;
+
+public class Type_Program {
+	public static void main(String[] args) {
+		HideMessage h = new HideMessage("Hello World");
+		
+		System.out.println(h.getMessage("test"));
+	}
+
+}

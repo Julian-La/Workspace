@@ -1,0 +1,32 @@
+package collections.maps;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Maps_Program {
+
+	public static void main(String[] args) {
+		
+		ArrayList<PhoneBookEntry>phoneBook = new ArrayList<>();
+		for(PhoneBookEntry e: phoneBook) {
+			if(e.name == "Müller") {
+				System.out.println(e.phoneNumber);
+			}
+		}
+		Map<String, String> phoneBook1 = new HashMap<>();
+		
+		phoneBook1.put("Müller", "+491234567890");
+		phoneBook1.put("Müller", "+491234567894");
+		phoneBook1.put("Schmidt", "+490987654321");
+		
+		for (Map.Entry<String, String> e : phoneBook1.entrySet()) {
+			System.out.println(e.getKey() + ": " + e.getValue());
+		}
+		// phoneBook.remove("Müller");
+		// System.out.println(phoneBook.size());
+		// System.out.println(phoneBook.get("Müller")); 
+	}
+}
+
+

@@ -1,0 +1,13 @@
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.desription.BDEF/BDO=Behavior for ZI_TRAVEL_M_100\rBehavior for ZC_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.desription.CLAS/OC=Behavior implementation for ZI_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.desription.DDLS/DF=Data model for travel\rProjection view for travel\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.desription.SRVB/SVB=Service binding for travel\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.desription.SRVD/SRV=Service definition for travel\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.name.BDEF/BDO=ZI_TRAVEL_M_100\rZC_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.name.CLAS/OC=ZCL_BP_I_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.name.DDLS/DF=ZI_TRAVEL_M_100\rZC_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.name.SRVB/SVB=ZUI_C_TRAVEL_M_100\r
+//com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.object.name.SRVD/SRV=ZUI_C_TRAVEL_M_100\r
+com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.package.context=ZTRAVEL_APP_100\r
+com.sap.adt.util.ui.contentassist.FieldHistoryProposalProvider.com.sap.adt.tools.core.project.IAbapProject=TRL_EN\r
+eclipse.preferences.version=1

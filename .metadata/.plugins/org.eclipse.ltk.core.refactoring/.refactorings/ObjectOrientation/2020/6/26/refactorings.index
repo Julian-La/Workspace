@@ -1,0 +1,22 @@
+1593189121653	Rename method 'method'
+1593189480431	Rename field 'className'
+1593189605755	Rename field 'classNumber'
+1593190051126	Rename field 'classNameExample'
+1593190075621	Rename field 'classNumberExample'
+1593190972143	Rename type 'Class'
+1593191099824	Rename type 'KClass'
+1593191199071	Rename field 'className'
+1593191211320	Rename field 'classNumber'
+1593191257222	Rename local variable 'n'
+1593191266817	Rename local variable 'q'
+1593191716349	Rename local variable 'name'
+1593192156977	Rename local variable 'instance1'
+1593196880673	Delete element
+1593196886373	Delete element
+1593196946684	Rename type 'MainMethod'
+1593196969267	Rename type 'Person'
+1593344110120	Rename type 'Singleton_Pattern_Carshop'
+1593347175636	Rename type 'Singleton_Pattern_Carshop_Program'
+1593347201240	Rename type 'Singleton_Pattern_Carshop_Class'
+1593349527289	Copy compilation units
+1593349650255	Delete elements

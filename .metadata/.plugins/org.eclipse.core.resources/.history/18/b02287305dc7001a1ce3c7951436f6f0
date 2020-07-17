@@ -1,0 +1,20 @@
+import java.util.HashSet;
+
+public class Sets {
+
+	public static void main(String[] args) {
+		/*
+		 * HashSet destroys the order of your array.
+		 * Therefore it filters duplicates out. 
+		 */
+		HashSet<String> students = new HashSet<>();
+		students.add("Monika");
+		students.add("Richard");
+		students.add("Simone");
+		students.add("Monika");
+		for(String student:students) {
+			System.out.println(student);
+		}
+	}
+
+}

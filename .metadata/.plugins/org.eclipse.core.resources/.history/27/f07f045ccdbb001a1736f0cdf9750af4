@@ -1,0 +1,158 @@
+package weatherAPI;
+
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.URLEncoder;
+import java.text.DecimalFormat;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.NamedNodeMap;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+
+public class Weather_API_Program {
+
+	public static void main(String[] args) throws Exception {
+//		new Weather_API_Program();
+//		}
+	
+		String cityName = "Mühldorf";
+//		String cityName = "Mühldorf";
+		cityName = URLEncoder.encode(cityName, "UTF-8");
+		String cityAbbreviation = "DE";
+		cityAbbreviation = URLEncoder.encode(cityAbbreviation, "UTF-8");
+		String uri = "http://api.openweathermap.org/data/2.5/weather?q="+cityName+","+cityAbbreviation+"&mode=xml&APPID=ef736066f9599e3640fc037f874b666d";
+		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+		Document document = documentBuilder.parse(uri);
+		NodeList temperatures = document.getElementsByTagName("temperature");
+		NodeList locations = document.getElementsByTagName("city");
+		Node temperature = temperatures.item(0);
+		Node location = locations.item(0);
+		NamedNodeMap tempAttributes = temperature.getAttributes();
+		NamedNodeMap locAttributes = location.getAttributes();
+		String temperatureCall = tempAttributes.getNamedItem("value").getNodeValue();
+		String locationCall = locAttributes.getNamedItem("name").getNodeValue();
+		float tempInKelvin = Float.parseFloat(temperatureCall);
+		float tempInDegreeCelsius = tempInKelvin- 273.15f;
+		DecimalFormat df = new DecimalFormat("#.##");
+		String message ="The temperature in "+locationCall+" is "+ df.format(tempInDegreeCelsius) + " °C.";
+		
+		JTextField cityTF = null;
+		JTextField abbreviationTF = null;
+		JButton searchButton = new JButton("Search temperature");
+
+		JFrame weatherFrame = new JFrame();
+		weatherFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		weatherFrame.setBounds(200, 0, 1500, 1000);
+		weatherFrame.setLayout(null);
+		
+		JLabel resultTemp = new JLabel(message);
+		JLabel cityInfo = new JLabel("City name:");
+		JLabel abbreviationInfo = new JLabel("City abbreviation:");
+		
+		cityTF.setFont(new Font("Arial", Font.PLAIN, 70));
+		abbreviationTF.setFont(new Font("Arial", Font.PLAIN, 70));
+		searchButton.setFont(new Font("Arial", Font.PLAIN, 50));
+		cityInfo.setFont(new Font("Arial", Font.PLAIN, 50));
+		abbreviationInfo.setFont(new Font("Arial", Font.PLAIN, 50));
+		resultTemp.setFont(new Font("Arial", Font.PLAIN, 60));
+		cityTF.setBounds(200,200,400,90);
+		abbreviationTF.setBounds(700,200,150,90);
+		searchButton.setBounds(200,300, 700,90);
+		cityInfo.setBounds(150,200,30,90);
+		abbreviationInfo.setBounds(600,200,30,90);
+		resultTemp.setBounds(200,400,1200,90);
+		weatherFrame.add(cityTF);
+		weatherFrame.add(abbreviationTF);
+		weatherFrame.add(searchButton);
+		weatherFrame.add(resultTemp);
+		weatherFrame.add(cityTF);
+		weatherFrame.add(abbreviationTF);
+		weatherFrame.add(cityInfo);
+		weatherFrame.add(abbreviationInfo);
+
+		
+		
+				
+		weatherFrame.setVisible(true);
+		searchButton.setVisible(true);
+		
+//		public Weather_API_Program() {
+//			
+//		}
+		
+	}
+
+//		public void  JButtonTextChangeTest() {
+		      
+		      
+//		    
+//		      button = new JButton();
+//		      button.addActionListener(new ActionListener() {
+//		         public void actionPerformed(ActionEvent ae) {
+//		            if (!textField.getText().equals(""))
+//		               button.setText(textField.getText());
+//		         }
+//		      });
+//		
+		
+		
+//		Clicklistener mouseclick= new Clicklistener();
+//		resultTemp.addActionListener(new ActionListener() {
+//			@Override
+//		
+		
+//		public void labelManagement() {
+			// if(resultTemp1 != null){resultTemp1.setText(message)}
+			// Information should move from resultTemp1 to resultTemp3, never ending. 
+		}
+		
+		
+		
+
+		
+//		//API key has been added to the URL and added to URI (Uniform Resource Identifier). Previously, the samples URL was used.
+//		String uri = "http://api.openweathermap.org/data/2.5/weather?q=Berlin,DE&mode=xml&APPID=ef736066f9599e3640fc037f874b666d";
+//		//Factory Pattern: "= DocumentBuilderFactory.newInstance();"
+//		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//		DocumentBuilder documentBuilder = factory.newDocumentBuilder();
+//		Document document = documentBuilder.parse(uri);
+		
+		// Node = e.g. XML or HTML with URL.
+//		NodeList times = document.getElementsByTagName("time");
+		
+//		for(int x = 0;x<times.getLength();x++) {
+//			Node time = times.item(x);
+//			// Attribute -> from="2019-03-27T16:00:00"
+//			NamedNodeMap timeAttributes = time.getAttributes();
+//			//System.out.println(timeAttributes.getNamedItem("from")); returns an object.
+//			//System.out.println(timeAttributes.getNamedItem("from").getNodeValue()); returns value after "from =".
+//			//We are not interested in times, we are interested in temperatures. So we make a variable of the topic above for later usage. 
+//			
+			
+//			String timestamp = timeAttributes.getNamedItem("from").getNodeValue();
+//			NodeList children = time.getChildNodes();
+//			for(int y=0;y<children.getLength();y++) {
+//				Node child = children.item(y);
+//				if(child.getNodeName()=="temperature") {
+//					String temperature = child.getAttributes().getNamedItem("value").getNodeValue();
+//					System.out.println(temperature);
+//				}
+//			}
+//		}
+		
+		//System.out.println(document.getDocumentElement().getTagName()); Shows the first Element.
+		// System.out.println(times.getLength()); Shows number of Elements with tag "time".
+			
+
+	
+

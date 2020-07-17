@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.sap.adt.sapgui.ui.launchConfigurationType">
+<stringAttribute key="OBJECT_NAME" value="ZTRAVEL_100"/>
+<stringAttribute key="OBJECT_TYPE" value="TABL/DT"/>
+<stringAttribute key="OBJECT_URI" value="/sap/bc/adt/ddic/tables/ztravel_100/source/main"/>
+<stringAttribute key="PROJECT_NAME" value="TRL_EN"/>
+<stringAttribute key="WB_ACTION" value="EXECUTE"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/TRL_EN"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+</launchConfiguration>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ObjektOrientierung&apos; to &apos;ObjectOrientation&apos;" description="Rename resource &apos;ObjektOrientierung&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/ObjektOrientierung" name="ObjectOrientation" stamp="1593173163165" updateReferences="true"/>
+</session>

@@ -1,0 +1,19 @@
+package singletonPattern;
+
+public class Singleton_Pattern {
+	
+	// instance is a variable of the singleton_pattern class. It's startcondition is null.
+	private static Singleton_Pattern instance;
+	// The constructor singleton_pattern() is empty and private. You can't use "= new Singleton_Pattern" in main.
+	private Singleton_Pattern() {
+		
+	}
+	// If there is no previous instance, a new instance will be created. 
+	// If sysout Singleton_Pattern.getInstance, the instance will be returned. 
+	public static Singleton_Pattern getInstance() {
+		if(instance==null) {
+			instance=new Singleton_Pattern();
+		}
+		return instance;
+	}
+}

@@ -1,0 +1,7 @@
+package collections.maps;
+
+public class PhoneBookEntry {
+	public int phoneNumber;
+	public String name;
+
+}

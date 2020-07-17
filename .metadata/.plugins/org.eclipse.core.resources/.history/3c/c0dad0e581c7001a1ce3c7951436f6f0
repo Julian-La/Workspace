@@ -1,0 +1,55 @@
+package collections.maps;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Maps_Program {
+
+	public static void main(String[] args) {
+		/*
+		 * Arrays can't return 2 values at once, therefore we use maps. 
+		 */
+		System.out.println("PhoneBookEntry without using a map:");
+		ArrayList<PhoneBookEntry>phoneBook = new ArrayList<>();
+		PhoneBookEntry p = new PhoneBookEntry();
+		phoneBook.add(p);
+		p.name = "Heinzen";
+		p.phoneNumber = "+49 151 68123565";
+		PhoneBookEntry n = new PhoneBookEntry();
+		phoneBook.add(n);
+		n.name = "Müller";
+		n.phoneNumber = "+49 151 99163565";
+		for(PhoneBookEntry e: phoneBook) {
+			if(e.name.equals("Müller")) {
+				System.out.println(e.phoneNumber);
+			}
+		}
+		System.out.println("--------------------");
+		
+		TreeMap<String, String> phoneBook2 = new TreeMap<>();
+		phoneBook2.put("Müller", "+456465465");
+		phoneBook2.put("Heinzen","+4646546546");
+		System.out.println("Is Family Müller stored in our phonebook?");
+		System.out.println(phoneBook2.containsKey("Müller"));
+		System.out.println("What's their number?");
+		System.out.println(phoneBook2.get("Müller"));
+		System.out.println("-------------------");
+		
+		Map<String, String> phoneBook1 = new HashMap<>();
+		
+		phoneBook1.put("Müller", "+491234567890");
+		phoneBook1.put("Müller", "+491234567894");
+		phoneBook1.put("Schmidt", "+490987654321");
+		
+		for (Map.Entry<String, String> e : phoneBook1.entrySet()) {
+			System.out.println(e.getKey() + ": " + e.getValue());
+		}
+		// phoneBook.remove("Müller");
+		// System.out.println(phoneBook.size());
+		// System.out.println(phoneBook.get("Müller")); 
+	}
+}
+
+

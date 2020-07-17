@@ -1,0 +1,237 @@
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Test {
+
+	public static void main(String[] args) throws IOException {
+		
+//Shortcut to comment out: Ctrl-SHIFT-7
+//Shortcut for System.out.println(): sysout+Ctrl+SPACE
+		
+//Calculations:
+System.out.println(Math.abs(-10));
+//Rounding up: 
+System.out.println(Math.ceil(9.5));
+//Rounding down:
+System.out.println(Math.floor(9.5));
+//Round:
+System.out.println(Math.round(9.5));
+//Minimum:
+System.out.println(Math.min(6,1));
+//Maximum:
+System.out.println(Math.max(1, 6));
+//Logarithm:
+System.out.println(Math.log(6));
+//Calculate: 2^10
+System.out.println(Math.pow(2, 10));
+//Random number between 0 and 5:
+System.out.println(Math.random()*10);;
+
+//Abbreviations:
+long c = 123;
+c += 123;
+c --;
+System.out.println(c);
+float a = 6;
+float b = 5;
+float sum = a + b;
+float dif = a - b;
+float product = a * b;
+float quot = a/b;
+float q = 255f/4f;
+System.out.println(q);		
+float remainder = a%b;
+System.out.println(sum);
+System.out.println(dif);
+System.out.println(product);
+System.out.println(quot);
+System.out.println(remainder);
+
+//TEST IF SOMETHING IS ODD OR EVEN:
+int ab = 3;
+if(ab%2 >0) {System.out.println("odd");}
+else System.out.println("even");
+
+//Scanner:		
+Scanner scan = new Scanner (System.in);
+System.out.println("Bitte geben Sie eine Zahl zwischen 1 und 10 ein: ");
+int x = scan.nextInt();
+if(x ==10) {System.out.println("Sie haben eine glatte Zehn eingegeben!");}
+else if(x<10 && x>=7) {System.out.println("Your number is smaller than 10, however it's equal to or greater 7.");}
+else if(x<7 && x>=4) {System.out.println("Your number is smaller than 7, however it's equal to or greater 4.");}
+else if(x<4 && x>=2) {System.out.println("Your number is smaller than 4, however it's equal to or greater 2.");}
+else if(x<2 && x>=1) {System.out.println("Your number is smaller than 2, however it's equal to or greater 1.");}
+else {System.out.println("Your number is greater than 10 or smaller than 1! Your input is not valid.");}
+
+////Cases with scanner example:
+//Scanner scan1 = new Scanner (System.in);
+//System.out.println("Please name a number in the range of 1 to 5: ");
+//int u = scan1.nextInt();
+//switch(u) {
+//case 5: System.out.print("It's 5 ");
+//break;
+//case 4: System.out.print("It's 4");
+//break;
+//case 3: System.out.print("It's 3");
+//break;
+//case 2: System.out.print("It's 2");
+//break;
+//case 1: System.out.print("It's 1");
+//break;
+//default : System.out.print("This case wasn't implemented.");
+
+//Substrings
+Scanner input = new Scanner(System.in);
+System.out.println("Please write: World.");
+String l = input.next();
+if(l.contentEquals("World")) {System.out.println("WOW!");}
+else System.out.println("Try again.");
+String z = "I live in munic";
+int pos = z.lastIndexOf(" ");
+System.out.println(z.substring(pos));
+
+//COMBINE IN FOR-LOOP
+for(int i=1;i<=15;i++) {if(i%3==0 && i%5==0) {System.out.println("ZickZack");}
+else if(i%3==0) {System.out.println("Zick");}
+else if(i%5==0) {System.out.println("Zack");}
+else {System.out.println(i);}
+
+
+////Count words without the usage of lists:
+//String file = "C:\\Users\\Julian\\Workspace\\test_function\\Faust.txt";
+//System.out.println(file);
+//Scanner input3 = new Scanner(Paths.get(file));
+//int countYou = 0;
+//int countI = 0;
+//while(input.hasNext()){
+//String word = input3.next();
+//word = word.toLowerCase();
+//System.out.println(word);
+//if(word.equals("ich")){countYou++;}
+//if(word.equals("du")){countI++;}
+//}
+//System.out.println("Ich: "+countYou);
+//System.out.println("Du: "+countI);
+
+//ARRAYS
+String[] name = new String[7]; 
+name[0] = "Erik";
+name[1] = "Max";
+name[2] = "Jan";
+name[3] = "Luis";
+name[4] = "Bernhard";
+name[5] = "Simone";
+name[6] = "Sebastian";
+System.out.println(name[0]);
+System.out.println(name[2]);
+System.out.println(name[5]);
+System.out.println(name[6]);
+System.out.println(Arrays.toString(name));
+
+//ARRAYSCAN
+//Scanner scan = new Scanner(System.in);
+//System.out.println("Wie viele Studenten sind in deinem Studiengang?");
+//int numberOfStudents = scan.nextInt();
+//String[] names = new String[numberOfStudents];
+//System.out.println("Bitte gebe "+names.length +" Vornamen ein");
+//for(int n = 0;n<names.length;n++) {names[n] = scan.next();}
+//System.out.println(Arrays.toString(names));
+
+//ARRAYS SHORT VERSION:
+//String os []= {"Windows", "Linux", "Mac"};
+//System.out.println(Arrays.toString(os));
+//System.out.println(os);
+//for(String osElement:os) {System.out.println(osElement);}
+
+////int []p=new int[10];
+//int t[]= {3,6,2,4,5,8,7,1};
+//int maxItem=Integer.MIN_VALUE;
+//////Alternative:  for(int item:t) {maxItem = Math.max(maxItem, item);
+//////System.out.println(maxItem);
+//for(int item:t) {System.out.println(item); if(maxItem<item) {maxItem=item;}
+//
+//System.out.println("The biggest number is: "+maxItem);
+
+
+//MULTI-DIMENSIONAL ARRAYS
+//boolean[][] board = new boolean[8][8];
+//board[0][1]=true;
+//for(boolean[] row:board) {System.out.println(Arrays.toString(row));
+//// Geht nicht, weil Arrays.toString nichts mit Mehrdimensionalen Arrays anfangen kann: System.out.println(Arrays.toString(board));
+
+//TicTocToe logic
+//*_|_|_
+//*_|_|_
+//*_|_|_
+
+//int [][] game = {
+//		{0,0,0},
+//		{0,0,0},
+//		{0,0,0}
+//};
+//int playerwon=0;
+//for(int x=0; x<3;x++) {
+//		if(game[x][0]!=0 && game[x][0] == game[x][1] && game[x][0] == game[x][2]) {
+//		playerwon=game[x][0];	
+//		}}
+//if (playerwon == 0) {System.out.println("Kein Spieler hat nach Zeilen gewonnen.");}
+//else if(playerwon == 1) {System.out.println("Spieler 1 hat nach Zeilen gewonnen.");}
+//else System.out.println("Spieler 2 hat nach Zeilen gewonnen");
+//for(int x=0; x<3;x++) {
+//		if(game[0][x]!=0 && game[0][x] == game[1][x] && game[0][x] == game[2][x]) {
+//		playerwon=game[0][x];	
+//		}}
+//if (playerwon == 0) {System.out.println("Kein Spieler hat nach Spalten gewonnen.");}
+//else if(playerwon == 1) {System.out.println("Spieler 1 hat nach Spalten gewonnen.");}
+//else System.out.println("Spieler 2 hat nach Spalten gewonnen");
+//for(int x=0; x<3;x++) {
+//	if(game[0][0]!=0 && game[0][0] == game[1][1] && game[0][0] == game[2][2]) {
+//	playerwon=game[0][0];	
+//	}
+//	if(game[0][2]!=0 && game[0][2] == game[1][1] && game[0][2] == game[2][0]) {
+//	playerwon=game[0][2];
+//	}
+//}
+//if (playerwon == 0) {System.out.println("Kein Spieler hat nach Diagonalen gewonnen.");}
+//else if(playerwon == 1) {System.out.println("Spieler 1 hat nach Diagnonalen gewonnen.");}
+//else System.out.println("Spieler 2 hat nach Diagonalen gewonnen");
+//}}
+
+//{
+//x=(x^1);
+//if(x==1) {a.setText("X");}
+//else {a.setText("O");}	
+
+// Verschachteltes Array Summe
+//int sum = 0;
+//int arr[][]= {{4,4},{2,4,2},{8}};
+//for(int []Row:Board) {for (int ColumnOfRow:Row) {
+//sum+= ColumnOfRow;
+//}
+//System.out.println(sum);
+//if(sum==6) {System.out.println("Magic");}
+//}
+//int arr[][]= {{4,4},{2,4,2},{8}};
+//int [] sums = new int [arr.length];
+//int sum = 0;
+//int counter = 0;
+//for(int[] row:arr) {
+//for(int column:row) {
+//    sum+= column;
+//        }
+//    sums[counter]=sum;
+//    counter++;
+//}
+//MAGIC ARRAY		
+//System.out.println(Arrays.toString(sums));
+//boolean isMagicArray = true;
+//int firstSumsValue = sums[1];
+//System.out.println(firstSumsValue);
+//for(int value: sums){if(value !=firstSumsValue){isMagicArray = false;}}
+//if(isMagicArray){System.out.println("Magic Array");}
+//else {System.out.println("Simple Array");}
+}	
+}
+}}

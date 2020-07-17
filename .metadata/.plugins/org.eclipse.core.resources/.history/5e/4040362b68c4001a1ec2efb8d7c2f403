@@ -1,0 +1,32 @@
+package userDatabase;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Arrays;
+
+public class FileStudentDatabase implements StudentDatabase{
+
+	@Override
+	public String[] readAllStudents() throws StudentDatabaseException {
+		try(BufferedReader b = new BufferedReader(new FileReader("datenbank2.txt"))){
+			String[] students = new String[0]; // This code is not ideal. Enhancing arrays afterwars is resource consuming.
+			while (b.ready()){
+				String student = b.readLine();
+				students = Arrays.copyOf(students, students.length+1); // As said in line 14.
+				students[students.length-1] = student; // Length starts counting at 0.
+			};
+		} catch (FileNotFoundException e) {
+			throw new StudentDatabaseException(e);
+		} catch (IOException e) {
+			throw new StudentDatabaseException(e);
+		}
+		return null;
+	}
+	
+	@Override
+	public void addStudent(String name) throws StudentDatabaseException {
+		// TODO Auto-generated method stub		
+	}
+}

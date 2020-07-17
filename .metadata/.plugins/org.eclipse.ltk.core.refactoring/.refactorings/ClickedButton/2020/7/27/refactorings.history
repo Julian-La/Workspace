@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename method &apos;clicked.Imput_Text_JButton.JButtonTextChangeTest()&apos; to &apos;Imput_Text_JButton&apos;&#x0D;&#x0A;- Original project: &apos;clicked&apos;&#x0D;&#x0A;- Original element: &apos;clicked.Imput_Text_JButton.JButtonTextChangeTest()&apos;&#x0D;&#x0A;- Renamed element: &apos;clicked.Imput_Text_JButton.Imput_Text_JButton()&apos;&#x0D;&#x0A;- Update references to refactored element" delegate="false" deprecate="false" description="Rename method &apos;JButtonTextChangeTest&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;clicked{Imput_Text_JButton.java[Imput_Text_JButton~JButtonTextChangeTest" name="Imput_Text_JButton" references="true" stamp="1593618477932" version="1.0"/>
+</session>

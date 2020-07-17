@@ -1,0 +1,17 @@
+defaultVTrees=FAVORITE_PACKAGES,FAVORITE_OBJECTS,RELEASED_FOR_CLOUD
+eclipse.preferences.version=1
+vtrees/1baf84d2-c27c-4f85-86db-eb59ae59633a/facets=
+vtrees/1baf84d2-c27c-4f85-86db-eb59ae59633a/filter=fav\:$CB0000000415
+vtrees/1baf84d2-c27c-4f85-86db-eb59ae59633a/name=Favorite Objects
+vtrees/1baf84d2-c27c-4f85-86db-eb59ae59633a/predefinedTree=FAVORITE_OBJECTS
+vtrees/1baf84d2-c27c-4f85-86db-eb59ae59633a/searchPattern=
+vtrees/35a320a5-2c3e-45a0-a3db-c619af2bcf67/facets=type
+vtrees/35a320a5-2c3e-45a0-a3db-c619af2bcf67/filter=api\:USE_IN_SAP_CLOUD_PLATFORM
+vtrees/35a320a5-2c3e-45a0-a3db-c619af2bcf67/name=Released Objects
+vtrees/35a320a5-2c3e-45a0-a3db-c619af2bcf67/predefinedTree=RELEASED_FOR_CLOUD
+vtrees/35a320a5-2c3e-45a0-a3db-c619af2bcf67/searchPattern=
+vtrees/c63200bb-d1d8-4db0-8b6c-0aa94800faca/facets=package,type
+vtrees/c63200bb-d1d8-4db0-8b6c-0aa94800faca/filter=package\:ZLOCAL,ZTRAVEL_APP_100
+vtrees/c63200bb-d1d8-4db0-8b6c-0aa94800faca/name=Favorite Packages
+vtrees/c63200bb-d1d8-4db0-8b6c-0aa94800faca/predefinedTree=FAVORITE_PACKAGES
+vtrees/c63200bb-d1d8-4db0-8b6c-0aa94800faca/searchPattern=

@@ -1,0 +1,27 @@
+import java.util.HashSet;
+
+public class Sets {
+
+	public static void main(String[] args) {
+		/*
+		 * HashSet destroys the order of your array.
+		 * Therefore it filters duplicates out AND it's way faster then
+		 * the regular ArrayList because data is saved with hashing. (index)
+		 */
+		HashSet<String> students = new HashSet<>();
+		students.add("Monika");
+		students.add("Richard");
+		students.add("Simone");
+		students.add("Monika");
+		for(String student:students) {
+			System.out.println(student);
+		}
+		if(students.contains("Simone")) {
+			System.out.println("Student ist auf der Liste.");
+		} else {
+			System.out.println("Student steht nicht auf der Liste!");
+		}
+		
+	}
+
+}

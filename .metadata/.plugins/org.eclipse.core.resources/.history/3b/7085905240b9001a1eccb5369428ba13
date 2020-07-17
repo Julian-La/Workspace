@@ -1,0 +1,22 @@
+
+public class Return {
+	private String writtenNumber;
+	private int number;
+	
+	public Return() {
+	getTwo();	
+	}
+
+	public static void main(String[] args) {
+		System.out.println(1);
+		if(2==2) {
+			
+		}
+		else {return;}
+		System.out.println(3);
+	}
+	public static int getTwo() {
+		return 2;
+	}	
+}
+	
