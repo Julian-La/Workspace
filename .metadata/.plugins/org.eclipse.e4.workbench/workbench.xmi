@@ -642,7 +642,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_L1aoBMfOEeqxPtXszVlN9g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0G88UMfPEeqlat3M0c8Lhw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_L1dGzsfOEeqxPtXszVlN9g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zWSuYMuTEeqWjpXuhuHcSw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_L1dGzsfOEeqxPtXszVlN9g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_L1aoEcfOEeqxPtXszVlN9g" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -673,7 +673,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_L1aoj8fOEeqxPtXszVlN9g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_0G-xg8fPEeqlat3M0c8Lhw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_L1dGQ8fOEeqxPtXszVlN9g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_zWVKoMuTEeqWjpXuhuHcSw" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_L1dGQ8fOEeqxPtXszVlN9g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_L1aomcfOEeqxPtXszVlN9g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2148,10 +2148,10 @@
       <command href="platform:/plugin/com.sap.adt.tools.core.ui/fragment.e4xmi#_J8TRgDjgEeiURaPJBnuGYA"/>
     </children>
   </toolBarContributions>
-  <toolBarContributions xmi:id="_zzqz8cfPEeqlat3M0c8Lhw" elementId="com.sap.adt.tools.core.ui.toolbarcontribution.refresh" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" parentId="com.sap.adt.tools.core.ui.toolbar" positionInParent="after=com.sap.adt.tools.core.ui.toolbarcontribution.handledtoolitem.unlock">
-    <children xsi:type="menu:HandledToolItem" xmi:id="_zzqz8sfPEeqlat3M0c8Lhw" elementId="com.sap.adt.tools.core.ui.toolbarcontribution.handledtoolitem.refresh" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" accessibilityPhrase="%command.refresh.name_xmit" label="" iconURI="platform:/plugin/com.sap.adt.tools.core.ui/icons/etool/refresh_nav.png" tooltip="%command.refresh.name_xmit" command="_L1dG_sfOEeqxPtXszVlN9g">
+  <toolBarContributions xmi:id="_zG-gAcuTEeqWjpXuhuHcSw" elementId="com.sap.adt.tools.core.ui.toolbarcontribution.refresh" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" parentId="com.sap.adt.tools.core.ui.toolbar" positionInParent="after=com.sap.adt.tools.core.ui.toolbarcontribution.handledtoolitem.unlock">
+    <children xsi:type="menu:HandledToolItem" xmi:id="_zG-gAsuTEeqWjpXuhuHcSw" elementId="com.sap.adt.tools.core.ui.toolbarcontribution.handledtoolitem.refresh" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" accessibilityPhrase="%command.refresh.name_xmit" label="" iconURI="platform:/plugin/com.sap.adt.tools.core.ui/icons/etool/refresh_nav.png" tooltip="%command.refresh.name_xmit" command="_L1dG_sfOEeqxPtXszVlN9g">
       <tags>e4_disabled_icon_image_key=platform:/plugin/com.sap.adt.tools.core.ui/icons/dtool/refresh_nav.png</tags>
-      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_zzqz88fPEeqlat3M0c8Lhw" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" coreExpressionId="com.sap.adt.tools.core.ui.toolsActive"/>
+      <visibleWhen xsi:type="ui:CoreExpression" xmi:id="_zG-gA8uTEeqWjpXuhuHcSw" contributorURI="platform:/plugin/com.sap.adt.tools.core.ui" coreExpressionId="com.sap.adt.tools.core.ui.toolsActive"/>
     </children>
   </toolBarContributions>
   <toolBarContributions xmi:id="_L1dD8sfOEeqxPtXszVlN9g" elementId="com.sap.adt.tools.abapsource.ui.toolbarcontribution.switchActiveInactive" contributorURI="platform:/plugin/com.sap.adt.tools.abapsource.ui" accessibilityPhrase="" parentId="com.sap.adt.tools.core.ui.toolbar" positionInParent="after=com.sap.adt.activation.ui.command.multiActivation">

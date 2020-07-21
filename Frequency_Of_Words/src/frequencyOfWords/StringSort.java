@@ -1,0 +1,19 @@
+package frequencyOfWords;
+
+import java.util.Comparator;
+
+public class StringSort implements Comparator <StringFrequency>{
+
+	@Override
+	public int compare(StringFrequency o1, StringFrequency o2) {
+		if(o1.getOccurence()<o2.getOccurence()) {
+			return 1;
+		} else if (o1.getOccurence()==o2.getOccurence()){
+			return 0;
+		} else {
+			return -1;
+		}
+	}
+}
+
+

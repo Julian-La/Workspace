@@ -1,0 +1,7 @@
+
+public class FrequencyAnalyser {
+	public void analyse() {
+		
+	}
+
+}

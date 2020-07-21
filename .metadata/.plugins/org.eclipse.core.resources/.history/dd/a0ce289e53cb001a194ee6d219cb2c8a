@@ -1,0 +1,20 @@
+import java.io.IOException;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Frequency_Program {
+
+	public static void main(String[] args) {
+		String fileName = "C:\\Users\\Julian\\Workspace\\Frequency_Of_Words\\Faust.2txt";
+		ArrayList <String> words = new ArrayList<>();
+		
+		try {
+			Scanner input = new Scanner(Paths.get(fileName));
+		} catch (IOException e) {
+			System.err.println("Error occured while scanner tried to read fileName. " + e + ". ");
+			//e.printStackTrace();
+		}
+	}
+
+}

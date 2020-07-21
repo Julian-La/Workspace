@@ -1,0 +1,26 @@
+
+public class StringFrequency {
+	private String word;
+	private int occurence;
+	
+	public StringFrequency(String word, int occurence) {
+		setWord(word);
+		setOccurence(occurence);
+	}
+	
+	public String getWord() {
+		return this.word;
+	}
+	
+	public int getOccurence() {
+		return this.occurence;
+	}
+	
+	public void setWord(String word) {
+		this.word = word;
+	}
+	
+	public void setOccurence(int occurence) {
+		this.occurence = occurence;
+	}	
+}

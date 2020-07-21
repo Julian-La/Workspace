@@ -1,0 +1,6 @@
+package test_function;
+
+public class ListImput {
+	int number;
+	String name;
+}
