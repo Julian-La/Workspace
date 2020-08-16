@@ -6,14 +6,17 @@ package constructor.abstractClass;
  * It's used much less than interfaces.
  * 
  * Difference between interfaces: 
- * Only the drive(){} implementation per class should vari. You can export driveToBerlin(){} and use it universal.
+ * A interface only has final variables and you can't define something as private. 
+ * You can have more Interfaces for one target class. In abstract classes you can/can't do these things. 
+ * For abstract classes you need to use "extends" at the target. For interfaces you use "implements". 
+ * By abstract classes you need to write "abstract" before a method to force it to a target.  
  */
 public abstract class AbstractClassExample {
 	abstract public void drive();
 	public void driveToBerlin() {
 	drive();
 	/**
-	 * Classes how extend with "AbstractClassExample" need to implement a "drive()" method.
+	 * Classes which extend with "AbstractClassExample" need to implement a "drive()" method.
 	 * Please see class "Bike.java" line 10-15.
 	 */
 	}

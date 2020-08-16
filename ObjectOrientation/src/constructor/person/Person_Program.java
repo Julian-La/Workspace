@@ -10,8 +10,8 @@ public class Person_Program {
 		 */
 
 		Person_Class person = new Person_Class("Paul", 22);
-		person.setName("Paul");
-		person.setAge(22);
+//		person.setName("Paul");
+//		person.setAge(22);
 		System.out.println(person);
 		System.out.println("As "+person.getName()+" was asked about his age, he responded with "+person.getAge()+".");
 

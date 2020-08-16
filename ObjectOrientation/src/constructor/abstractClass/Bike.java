@@ -7,11 +7,13 @@ public Bike(String brand, int number) {
 	this.brand = brand;
 	this.number = number;
 }
-Bike b = new Bike("BMW",150); // Just for testing. 
-public void drive() {
-	System.out.println("lol");
+
+@Override
+public void drive() { // Without implementing "drive(){}" no chance.
+	// TODO Auto-generated method stub
+	
 }
-public void driveToBerlin() { // Without implementing "drive(){}" no chance.  
+public void driveToBerlin() { // You don't need to implement driveToBerlin(){}.
 	drive();
 }
 }

@@ -7,6 +7,7 @@ public class Bike_Program {
 		BikeSubmissiveClass special = new BikeSubmissiveClass("Special",12);
 		System.out.println(standard.getBrand());
 		System.out.println(special.getBrand());
+		System.out.println(special.drive());
 		
 
 	}

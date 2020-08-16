@@ -6,7 +6,7 @@ public class State {
 		
 		/* The state determines the program's condition.
 		 * This includes all variables and methods used in e.g. the main method. 
-		 * The higher a variables and methods count in one program, the worse program's condition becomes.
+		 * The higher a variable's and method's count in one program, the worse it's condition becomes.
 		 * All redundant variables and methods are called overhead and can be shortened by the usage of superior classes.
 		 */
 		 String player1Name = "Max";
