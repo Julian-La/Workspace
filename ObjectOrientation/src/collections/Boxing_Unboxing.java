@@ -7,7 +7,7 @@ public class Boxing_Unboxing {
 
 	public static void main(String[] args) {
 		/**
-		 * You cant write: Set<int>scores = new TreeSet<>(); because int is primary data. 
+		 * You can't write: Set<int>scores = new TreeSet<>(); because int is a primary datatype. 
 		 * In Sets/Arrays you are only allowed to use classes. 
 		 * Integer has it's own class, therefore it can be used.
 		 * Having a own class is called boxing. 
@@ -17,7 +17,7 @@ public class Boxing_Unboxing {
 		 * Previously you had to write: 
 		 * int a = 5;
 		 * Inter b = new Interger(a);
-		 * Since Version 5 you can typecast without declaring it again with instanceof:
+		 * Since Version 5 you can typecast without redeclaring (instanceof):
 		 */
 		int a = 5;
 		Integer b = a;

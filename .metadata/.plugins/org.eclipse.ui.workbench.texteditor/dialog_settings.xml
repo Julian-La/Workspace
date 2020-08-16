@@ -8,6 +8,7 @@
 		<item key="incremental" value="true"/>
 		<item key="isRegEx" value="true"/>
 		<list key="findhistory">
+			<item value="ABC"/>
 			<item value="printSum"/>
 			<item value="printsum"/>
 			<item value="message"/>
@@ -22,7 +23,6 @@
 			<item value="font"/>
 			<item value="clicked"/>
 			<item value="boolean"/>
-			<item value="tic"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

@@ -18,6 +18,10 @@ public class Lists_Program {
 		for(int i = 0;i<students.length;i++) {
 			System.out.println(students[i]);
 		}
+//		You can also write:
+//		for(String a:students) {
+//			System.out.println("WARNING"+a);
+//		}
 		/**
 		 * ...we need to handle this situation by using generics:
 		 */
@@ -32,12 +36,13 @@ public class Lists_Program {
 		for(String student:studentList) {
 		System.out.println(student);
 	}
-
 		Scanner input = new Scanner(System.in);
 		while(input.hasNext()) {
 			String s = input.next();
 			studentList.add(s);
-			System.out.println("Du hast "+s+" angelegt. Derzeit befinden sich "+studentList.size()+" Studenten auf der Liste.");
+			if(!s.equals("#Output")) {
+				System.out.println("Du hast "+s+" angelegt. Derzeit befinden sich "+studentList.size()+" Studenten auf der Liste.");
+			}
 			if(s.contentEquals("#Output")) {
 				studentList.remove("#Output");
 				for(String output:studentList) {

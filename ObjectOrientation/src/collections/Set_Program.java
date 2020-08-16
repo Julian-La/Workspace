@@ -1,4 +1,5 @@
 package collections;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -29,11 +30,8 @@ public class Set_Program {
 			System.out.println("^^^^^^^HashSet was used above");
 		}
 		/*
-		 * A TreeSet like all Set refuses duplicate values.
+		 * A TreeSet like all Sets refuses duplicate values (exception at line 48-54).
 		 * TreeSet will sort your array at all times. 
-		 * Collections.sort() allows to sort the list on differents criterias 
-		 * using different Comparators. With a TreeSet, you can also give a 
-		 * Comparator but you will need to instantiate one TreeSet for each Comparator.
 		 */
 		TreeSet<String> students2 = new TreeSet<>();
 		students2.add("Selina");

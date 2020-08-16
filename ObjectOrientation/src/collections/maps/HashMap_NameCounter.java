@@ -1,12 +1,13 @@
-package test_function;
+package collections.maps;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MapProgram {
+public class HashMap_NameCounter {
 
 	public static void main(String[] args) {
+		System.out.println("Count names and display their amount next to them:");
 		ArrayList<String> words= new ArrayList<>();
 		words.add("Namex");
 		words.add("Namex");

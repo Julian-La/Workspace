@@ -35,7 +35,7 @@ public class Maps_Program {
 		 * Treemap is way faster then our array:
 		 * On the other hand, it's not possible to store 2 families with the same name.
 		 * Newer keys overwrite old ones. 
-		 * Therefore you should use .put(new Integer(number),"String");
+		 * For that reason you can use .put(new Integer(number),"String"); to use a number as key. 
 		 */
 		TreeMap<String, String> phoneBook2 = new TreeMap<>();
 		phoneBook2.put("Müller", "+456465465");
@@ -61,7 +61,7 @@ public class Maps_Program {
 		}
 		// phoneBook.remove("Müller");
 		// System.out.println(phoneBook.size());
-		// System.out.println(phoneBook.get("Müller")); 
+
 	}
 }
 

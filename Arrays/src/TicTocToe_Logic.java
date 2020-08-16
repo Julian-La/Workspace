@@ -1,5 +1,5 @@
 
-public class Arrays {
+public class TicTocToe_Logic {
 
 	public static void main(String[] args) {
 
@@ -39,6 +39,8 @@ public class Arrays {
 		if (playerwon == 0) {System.out.println("Nobody won.");}
 		else if(playerwon == 1) {System.out.println("Player 1 won.");}
 		else System.out.println("Player 2 won");
+		
+		
 	}
 }
 
