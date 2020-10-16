@@ -26,7 +26,10 @@ public class Snake {
 			Snake.head.setX(7); 
 			Snake.head.setY(7);
 			Snake.score = 0;
-		} else {
+		} else if (tails.size()==1){
+			Snake.tails.clear();
+		}
+			else {
 			tails.remove(1); 
 		}
 	}

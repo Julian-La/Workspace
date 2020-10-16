@@ -41,7 +41,9 @@ public class Collision {
 		if(Snake.head.getX()==Snake.trap.getX()&&Snake.head.getY()==Snake.trap.getY()) {
 			Snake.trap.definePosition();
 			Snake.removeTail();
+			if (Snake.score!=0) {
 			Snake.score-=1;
+			}
 			if(Snake.score>Snake.bestscore) {
 				Snake.bestscore = Snake.score;
 			}

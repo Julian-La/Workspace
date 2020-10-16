@@ -22,13 +22,13 @@ public class Draw extends JLabel{
 		g.fillRect(0, 0, GUI.width, GUI.height); //?????????
 		
 		//Draw Snake tails
-		g.setColor(new Color(153,50,0));
+		g.setColor(new Color(255,216,0));
 		for(int i = 0; i<Snake.tails.size(); i++) {
 			p = Snake.ptc(Snake.tails.get(i).getX(), Snake.tails.get(i).getY());
 			g.fillRect(p.x, p.y, 32, 32);
 		}
 		//Draw Snake head
-		g.setColor(new Color(255,148,96));
+		g.setColor(new Color(255,7,20));
 		p = Snake.ptc(Snake.head.getX(),Snake.head.getY());
 		g.fillRect(p.x, p.y, 32, 32);
 		
@@ -103,12 +103,12 @@ public class Draw extends JLabel{
 		}
 		
 		//Draw Bounty
-				g.setColor(new Color(255,149,202));
+				g.setColor(new Color(255,0,225));
 				p = Snake.ptc(Snake.bounty.getX(), Snake.bounty.getY());
 				g.fillRect(p.x, p.y, 32, 32);
 				
 		//Draw Trap
-				g.setColor(new Color(123,149,255));
+				g.setColor(new Color(8,0,255));
 				p = Snake.ptc(Snake.trap.getX(), Snake.trap.getY());
 				g.fillRect(p.x, p.y, 32, 32);
 				
